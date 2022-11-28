@@ -7,7 +7,7 @@ https://github.com/oracle/oci-go-sdk
 
 ## Quick shortcut to run on OCI Shell
 
-```bash
+```shell
 mkdir producer
 cd producer
 go mod init example/producer
