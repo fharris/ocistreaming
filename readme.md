@@ -13,9 +13,14 @@ cd producer
 go mod init example/producer
 vi producer.go 
 ```
-*paste* code from  See my [About](/about/)  [code](/producer.go/)    page for details.   
+*paste* code from  See my   [producer.go](/producer.go/).   
 
+You might need to run :
+
+```
 go get -d github.com/oracle/oci-go-sdk/v49@latest
+```
+
 
 
 
