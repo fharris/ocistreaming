@@ -1,4 +1,4 @@
-## Producing messages to OCI Streaming
+# Producing messages to OCI Streaming
 
 
 *Example from documentation* 
