@@ -28,12 +28,12 @@ and
 
 ```Go
 const ociMessageEndpoint = "https://cell-1.streaming.eu-frankfurt-1.oci.oraclecloud.com"
-const ociStreamOcid = "ocid1.stream.oc1.eu-frankfurt-1.amaaaaaauevftmqaikcwu43ouqq6lz2jhfrwevh3yrh2u6q4zpzcss5zvvuq"
+const ociStreamOcid = "ocid1.stream.oc1.eu-frankfurt-1.amaaaaa..."
 const ociConfigFilePath = "/home/fernando_h/.oci/config"
 const ociProfileName = "DEFAULT"
 ```
 
-Where you should updater according to your configuration file.
+Where you should update according to your OCI configuration file and OCI Streaming Service streamOCID and Endpoint.
 
 
 
