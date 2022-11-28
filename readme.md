@@ -7,15 +7,18 @@ https://github.com/oracle/oci-go-sdk
 
 ## Quick shortcut to run on OCI Shell
 
+Open your OCI Shell:
+
+
 ```shell
 mkdir producer
 cd producer
 go mod init example/producer
 vi producer.go 
 ```
-*paste* code from  See my   [producer.go](/producer.go/).   
+*paste* code from  [producer.go](/producer.go/).   
 
-You might need to run to update dependencies in mod :
+You might need  to update dependencies in mod with below command:
 
 ```
 go get -d github.com/oracle/oci-go-sdk/v49@latest
