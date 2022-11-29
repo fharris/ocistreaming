@@ -84,7 +84,7 @@ Add dependencies to *pom* file:
 
 Create class Consumer.Java:
 ```shell
-vi Consumer/src/main/java/com/oci/stream/Consumer.java
+cp Consumer.java Consumer/src/main/java/com/oci/stream/
 ```
 past code from [Consumer.java](/Consumer.java/)
 
@@ -96,6 +96,11 @@ You sould need to update de oci configuration file and the oci stream id and mes
         final String ociStreamOcid = "ocid1.stream.oc1.eu-frankfurt-1.amaaaaaaue...";
         final String ociMessageEndpoint = "https://cell-1.streaming.eu-frankfurt-1.oci.oraclecloud.com";
 ```
+
+```
+vi Consumer/src/main/java/com/oci/stream/Consumer.java
+```
+
 
 mvn install exec:java -Dexec.mainClass=com.oci.stream.Consumer
 ```
