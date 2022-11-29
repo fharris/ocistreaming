@@ -54,7 +54,7 @@ mvn -B archetype:generate -DgroupId=com.oci.stream -DartifactId=Consumer -Darche
 vi Consumer/pom.xml
 ```
 
-Add dependencies to pom:
+Add dependencies to *pom* file:
 ```xml
 <dependencies>
     <dependency>
@@ -63,8 +63,24 @@ Add dependencies to pom:
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.oracle.oci.sdk</groupId>
+      <artifactId>oci-java-sdk-common</artifactId>
+      <version>1.33.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.oci.sdk</groupId>
+      <artifactId>oci-java-sdk-streaming</artifactId>
+      <version>1.33.2</version>
+    </dependency>
   </dependencies>
 ```
+
+Change App.Java with code from [Consumer.java](/producer.go/).
+```shell
+vi Consumer/
+```
+
 
 mvn install exec:java -Dexec.mainClass=com.oci.stream.App
 ```
