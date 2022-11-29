@@ -39,7 +39,7 @@ Then run de application:
 go run .
 ```
 
-
+You sould be able to see a bunch of new messages being sent to OCI Streaming.
 
 
 # Consuming messages from OCI Streaming with Java
@@ -57,7 +57,8 @@ Open your OCI Shell:
 mkdir consumer
 cd consumer
 mvn -B archetype:generate -DgroupId=com.oci.stream -DartifactId=Consumer -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
-vi Consumer/pom.xml
+cd Consumer
+vi pom.xml
 ```
 
 Add dependencies to *pom* file:
@@ -82,12 +83,10 @@ Add dependencies to *pom* file:
   </dependencies>
 ```
 
-Create class Consumer.Java:
+Copy class Consumer.Java to mvn project location:
 ```shell
-cp Consumer.java Consumer/src/main/java/com/oci/stream/
+cp ../Consumer.java /src/main/java/com/oci/stream/
 ```
-past code from [Consumer.java](/Consumer.java/)
-
 
 You sould need to update de oci configuration file and the oci stream id and message endpoint:
 ```java
@@ -97,11 +96,13 @@ You sould need to update de oci configuration file and the oci stream id and mes
         final String ociMessageEndpoint = "https://cell-1.streaming.eu-frankfurt-1.oci.oraclecloud.com";
 ```
 
+Open Consumer.java and update OCI configuration:
 ```
 vi Consumer/src/main/java/com/oci/stream/Consumer.java
 ```
 
-
+Finally, run the application with maven and see the messages previously produced with the Go producer being processed:
+```
 mvn install exec:java -Dexec.mainClass=com.oci.stream.Consumer
 ```
 
