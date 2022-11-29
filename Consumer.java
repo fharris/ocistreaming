@@ -1,4 +1,4 @@
-package oci.sdk.oss.example;
+package com.oci.stream.Consumer;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.oracle.bmc.ConfigFileReader;
@@ -19,10 +19,10 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Consumer {
     public static void main(String[] args) throws Exception {
-        final String configurationFilePath = "<config_file_path>";
-        final String profile = "<config_file_profile_name>";
-        final String ociStreamOcid = "<stream_OCID>";
-        final String ociMessageEndpoint = "<stream_message_endpoint>";
+        final String configurationFilePath = "/home/fernando_h/.oci/config";
+        final String profile = "DEFAULT";
+        final String ociStreamOcid = "ocid1.stream.oc1.eu-frankfurt-1.amaaaaaaue...";
+        final String ociMessageEndpoint = "https://cell-1.streaming.eu-frankfurt-1.oci.oraclecloud.com";
 
         final ConfigFileReader.ConfigFile configFile = ConfigFileReader.parseDefault();
         final AuthenticationDetailsProvider provider =
