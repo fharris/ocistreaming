@@ -88,7 +88,7 @@ You sould need to update de oci configuration file and the oci stream id and mes
 
 Open Consumer.java and update OCI configuration:
 ```
-vi Consumer/src/main/java/com/oci/stream/Consumer.java
+vi src/main/java/com/oci/stream/Consumer.java
 ```
 
 Finally, run the application with maven and see the messages previously produced with the Go producer being processed:
