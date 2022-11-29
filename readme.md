@@ -46,8 +46,6 @@ https://github.com/oracle/oci-java-sdk
 
 
 ```shell
-mkdir consumer
-cd consumer
 mvn -B archetype:generate -DgroupId=com.oci.stream -DartifactId=Consumer -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
 cd Consumer
 vi pom.xml
