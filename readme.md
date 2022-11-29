@@ -96,3 +96,4 @@ Finally, run the application with maven and see the messages previously produced
 mvn install exec:java -Dexec.mainClass=com.oci.stream.Consumer
 ```
 
+You should be able to see the output with the captured messages 
