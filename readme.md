@@ -76,11 +76,11 @@ Add dependencies to *pom* file:
   </dependencies>
 ```
 
-Change App.Java with code from [Consumer.java](/producer.go/).
+Create class Consumer.Java:
 ```shell
-vi Consumer/
+vi Consumer/src/main/java/com/oci/stream/Consumer.java
 ```
-
+past code from [Consumer.java](/Consumer.java/)
 
 mvn install exec:java -Dexec.mainClass=com.oci.stream.App
 ```
