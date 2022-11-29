@@ -75,7 +75,7 @@ Add dependencies to *pom* file:
 
 Copy class Consumer.Java to mvn project location:
 ```shell
-cp ../Consumer.java /src/main/java/com/oci/stream/
+cp ../Consumer.java src/main/java/com/oci/stream/
 ```
 
 You sould need to update de oci configuration file and the oci stream id and message endpoint:
