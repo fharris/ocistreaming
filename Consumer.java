@@ -1,4 +1,4 @@
-package com.oci.stream.Consumer;
+package com.oci.stream;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.oracle.bmc.ConfigFileReader;
