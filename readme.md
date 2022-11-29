@@ -1,3 +1,9 @@
+# Start by cloning this repository into your OCI Cloud Shell:
+
+```git
+git clone https://github.com/fharris/ocistreaming-drills
+```
+
 # Producing messages to OCI Streaming with Go
 
 
