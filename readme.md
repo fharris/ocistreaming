@@ -2,6 +2,7 @@
 
 ```git
 git clone https://github.com/fharris/ocistreaming-drills
+cd ocistreaming-drills/
 ```
 
 # Producing messages to OCI Streaming with Go
