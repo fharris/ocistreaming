@@ -12,10 +12,6 @@ cd ocistreaming-drills/
 https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/streaming-quickstart-oci-sdk-for-go.htm
 https://github.com/oracle/oci-go-sdk
 
-## Quick shortcut to run on OCI Shell
-
-Open your OCI Shell:
-
 
 ```shell
 vi producer.go 
@@ -48,10 +44,6 @@ You sould be able to see a bunch of new messages being sent to OCI Streaming.
 https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/streaming-quickstart-oci-sdk-for-java.htm#java-sdk-streaming-quickstart
 https://github.com/oracle/oci-java-sdk
 
-
-## Quick shortcut to run on OCI Shell
-
-Open your OCI Shell:
 
 ```shell
 mkdir consumer
