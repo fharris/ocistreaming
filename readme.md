@@ -35,6 +35,7 @@ go get -d github.com/oracle/oci-go-sdk/v49@latest
 ```
 
 Then run de application:
+```
 go run .
 ```
 
