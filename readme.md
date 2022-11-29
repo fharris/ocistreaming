@@ -82,7 +82,15 @@ vi Consumer/src/main/java/com/oci/stream/Consumer.java
 ```
 past code from [Consumer.java](/Consumer.java/)
 
-mvn install exec:java -Dexec.mainClass=com.oci.stream.App
+
+You sould need to update de oci configuration file and the oci stream id and message endpoint:
+```java
+        final String configurationFilePath = "/home/fernando_h/.oci/config";
+        final String profile = "DEFAULT";
+        final String ociStreamOcid = "ocid1.stream.oc1.eu-frankfurt-1.amaaaaaaue...";
+        final String ociMessageEndpoint = "https://cell-1.streaming.eu-frankfurt-1.oci.oraclecloud.com";
 ```
 
-Create a new file with 
+mvn install exec:java -Dexec.mainClass=com.oci.stream.Consumer
+```
+
