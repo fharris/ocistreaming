@@ -30,7 +30,7 @@ You might need  to update dependencies in mod with below command :
 go get -d github.com/oracle/oci-go-sdk/v49@latest
 ```
 
-Then run de application:
+Then run the application:
 ```
 go run .
 ```
